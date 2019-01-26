@@ -36,10 +36,10 @@ public class BalloonSpawn : MonoBehaviour
 
                 joint.distance = 5.0f;
 
-                //if(true)
-                //{
-                //    hit.rigidbody.AddForce(new Vector2( (hit.point.x - hit.transform.position.x) * swayFactor , 0.0f), ForceMode2D.Force);
-                //}
+                if(true)
+                {
+                    hit.rigidbody.AddForce(new Vector2( (hit.point.x - hit.transform.position.x) * swayFactor , 0.0f), ForceMode2D.Force);
+                }
 
             }
             
