@@ -11,7 +11,8 @@ public class GoalScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("House"))
         {
-            Invoke("win",0);
+            Invoke("win",3);
+            
         }
     }
 

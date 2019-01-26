@@ -47,6 +47,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="AudioManager.cs" t="Include" />
           <e p="BalloonPopping.cs" t="Include" />
           <e p="BalloonSpawn.cs" t="Include" />
           <e p="BoulderFall.cs" t="Include" />
@@ -61,6 +62,7 @@
           <e p="NewMovementComponent.cs" t="Include" />
           <e p="Physics2DExtentions.cs" t="Include" />
           <e p="PhysicsObject.cs" t="Include" />
+          <e p="PlayerRespawn.cs" t="Include" />
           <e p="RopeBehaviour.cs" t="Include" />
           <e p="SetBallonLine.cs" t="Include" />
           <e p="TS_Rising.cs" t="Include" />
