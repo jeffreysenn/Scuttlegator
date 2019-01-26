@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-
+    
     [Range(1, 9)]
     public uint AmountOfBackgrounds;
 
@@ -12,6 +12,8 @@ public class Parallax : MonoBehaviour
     public GameObject[,] BackgroundObjects;
 
     public float parallaxWeight;
+    public Color SpriteColor;
+    public int OrderInLayer;
 
     private GameObject House;
     private float SpriteHeight;
@@ -37,6 +39,8 @@ public class Parallax : MonoBehaviour
                     BackgroundObjects[i,j] = new GameObject();
                     SpriteRenderer sr = BackgroundObjects[i, j].AddComponent(typeof(SpriteRenderer)) as SpriteRenderer;
                     sr.sprite = BackgroundSprite;
+                    sr.color = SpriteColor;
+                    sr.sortingOrder = OrderInLayer;
                 }
             }
             
