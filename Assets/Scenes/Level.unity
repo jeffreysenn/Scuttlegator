@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: fea7336cedc36c94ab2e129e0a1d2a51, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -3514,7 +3514,7 @@ SpriteShapeRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 06afd287c0cd1644e91d3f1e57339a9a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3533,7 +3533,7 @@ SpriteShapeRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
@@ -3677,7 +3677,7 @@ PrefabInstance:
         type: 3}
       propertyPath: gunController
       value: 
-      objectReference: {fileID: 932202279}
+      objectReference: {fileID: 852474153}
     - target: {fileID: 1436079553, guid: d2e05d03e9de85543bfe737c78e9a54c, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -3925,7 +3925,7 @@ PrefabInstance:
     - target: {fileID: 5950817797910523096, guid: 4551702998e0e5346b0bb5f163dcce55,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -4.54887
       objectReference: {fileID: 0}
     - target: {fileID: 5950817797910523096, guid: 4551702998e0e5346b0bb5f163dcce55,
         type: 3}
@@ -3975,6 +3975,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 497543226}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &852474153 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123,
+    type: 3}
+  m_PrefabInstance: {fileID: 80720485}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30924b4a663eb394aa99a093c62bf5a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &861862065 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5950817797910523096, guid: 4551702998e0e5346b0bb5f163dcce55,
@@ -4276,18 +4288,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6278206a6152e774db0376680f42dd90, type: 3}
---- !u!114 &932202279 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123,
-    type: 3}
-  m_PrefabInstance: {fileID: 80720485}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30924b4a663eb394aa99a093c62bf5a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &944419503
 PrefabInstance:
   m_ObjectHideFlags: 0
