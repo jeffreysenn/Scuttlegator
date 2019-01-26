@@ -11,52 +11,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="RopeBehaviour.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/RopeBehaviour.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <marker date="1548453508470" expanded="false" signature="6:78" ph="..." />
-                <marker date="1548453508470" expanded="true" signature="122:511" ph="{...}" />
-                <marker date="1548453508470" expanded="true" signature="194:430" ph="{...}" />
-                <marker date="1548453508470" expanded="true" signature="209:424" ph="/* Object stops at the rigidbody it collides with, render a linerenderer between it and the players hand (?). ... */" />
-                <marker date="1548453508470" expanded="true" signature="488:509" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Buttons.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Buttons.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-              <folding>
-                <marker date="1548453348044" expanded="false" signature="6:113" ph="..." />
-                <marker date="1548453348044" expanded="true" signature="151:403" ph="{...}" />
-                <marker date="1548453348044" expanded="true" signature="223:244" ph="{...}" />
-                <marker date="1548453348044" expanded="true" signature="302:323" ph="{...}" />
-                <marker date="1548453348044" expanded="true" signature="352:401" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoadOnClick.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../ToastyTitan/mastermind/Assets/Scripts/UI/LoadOnClick.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -200,57 +154,5 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/RopeBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1548453508470" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548453508470" expanded="true" signature="122:511" ph="{...}" />
-            <marker date="1548453508470" expanded="true" signature="194:430" ph="{...}" />
-            <marker date="1548453508470" expanded="true" signature="209:424" ph="/* Object stops at the rigidbody it collides with, render a linerenderer between it and the players hand (?). ... */" />
-            <marker date="1548453508470" expanded="true" signature="488:509" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/RopeBehaviour.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <marker date="1548453508470" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548453508470" expanded="true" signature="122:511" ph="{...}" />
-            <marker date="1548453508470" expanded="true" signature="194:430" ph="{...}" />
-            <marker date="1548453508470" expanded="true" signature="209:424" ph="/* Object stops at the rigidbody it collides with, render a linerenderer between it and the players hand (?). ... */" />
-            <marker date="1548453508470" expanded="true" signature="488:509" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../ToastyTitan/mastermind/Assets/Scripts/UI/LoadOnClick.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Buttons.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
-          <folding>
-            <marker date="1548453348044" expanded="false" signature="6:113" ph="..." />
-            <marker date="1548453348044" expanded="true" signature="151:403" ph="{...}" />
-            <marker date="1548453348044" expanded="true" signature="223:244" ph="{...}" />
-            <marker date="1548453348044" expanded="true" signature="302:323" ph="{...}" />
-            <marker date="1548453348044" expanded="true" signature="352:401" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
