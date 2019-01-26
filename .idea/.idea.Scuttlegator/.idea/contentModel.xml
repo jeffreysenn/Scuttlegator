@@ -6,6 +6,7 @@
     <e p="D:\Code\Unity\Neon_Nemesis\BaloonHouse\Scuttlegator" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+<<<<<<< Updated upstream
         <e p="Scripts" t="Include">
           <e p="BoulderFall.cs" t="Include" />
           <e p="BoulderSpawn.cs" t="Include" />
@@ -18,6 +19,27 @@
           <e p="RopeBehaviour.cs" t="Include" />
           <e p="TS_Rising.cs" t="Include" />
         </e>
+=======
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="BalloonSpawn.cs" t="Include" />
+          <e p="BulletController.cs" t="Include" />
+          <e p="Buttons.cs" t="Include" />
+          <e p="CameraFollowHouse.cs" t="Include" />
+          <e p="GunController.cs" t="Include" />
+          <e p="MovementComponent.cs" t="Include" />
+          <e p="PhysicsObject.cs" t="Include" />
+          <e p="RopeBehaviour.cs" t="Include" />
+          <e p="SetBallonLine.cs" t="Include" />
+          <e p="TS_Rising.cs" t="Include" />
+        </e>
+>>>>>>> Stashed changes
       </e>
       <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
