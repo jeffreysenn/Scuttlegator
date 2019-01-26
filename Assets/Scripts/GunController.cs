@@ -28,8 +28,6 @@ public class GunController : MonoBehaviour
         muzzle = transform.Find("Muzzle").gameObject;
 
         contactFilter.useTriggers = false;
-        contactFilter.SetLayerMask(Physics2D.GetLayerCollisionMask(bullets[0].gameObject.layer));
-        contactFilter.useLayerMask = true;
     }
 
     // Update is called once per frame
@@ -71,9 +69,18 @@ public class GunController : MonoBehaviour
         int hitNumbers = Physics2D.Raycast(muzzle.transform.position, muzzle.transform.up, contactFilter, hits, rayCastDistance);
         if(hitNumbers > 0)
         {
-            outHit = hits[0];
-            Debug.Log(outHit.point);
-            return true;
+            foreach(RaycastHit2D hit in hits)
+            {
+                if (hit.transform)
+                {
+                    if (hit.transform.gameObject.CompareTag("House"))
+                    {
+                        outHit = hit;
+                        return true;
+                    }
+                }
+                
+            }
         }
         outHit = new RaycastHit2D();
         return false;

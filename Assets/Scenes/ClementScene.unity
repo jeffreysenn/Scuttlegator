@@ -542,10 +542,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 701437456, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
 --- !u!1 &1369932310
@@ -957,11 +953,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: House
       objectReference: {fileID: 0}
-    - target: {fileID: 4174705500674128308, guid: 5f2ec329ab4b56e4e9156a5305a2f5f2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 31
-      objectReference: {fileID: 0}
     - target: {fileID: 4174705500674128296, guid: 5f2ec329ab4b56e4e9156a5305a2f5f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1017,30 +1008,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4174705500674128296, guid: 5f2ec329ab4b56e4e9156a5305a2f5f2,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4174705500674128298, guid: 5f2ec329ab4b56e4e9156a5305a2f5f2,
-        type: 3}
-      propertyPath: m_LinearDrag
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4174705500674128298, guid: 5f2ec329ab4b56e4e9156a5305a2f5f2,
-        type: 3}
-      propertyPath: m_AngularDrag
-      value: 40
-      objectReference: {fileID: 0}
     - target: {fileID: 4174705500674128297, guid: 5f2ec329ab4b56e4e9156a5305a2f5f2,
         type: 3}
       propertyPath: gunController
       value: 
       objectReference: {fileID: 1489143963}
-    - target: {fileID: 4174705500674128297, guid: 5f2ec329ab4b56e4e9156a5305a2f5f2,
-        type: 3}
-      propertyPath: swayFactor
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f2ec329ab4b56e4e9156a5305a2f5f2, type: 3}

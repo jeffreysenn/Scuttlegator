@@ -6,9 +6,9 @@ public class BalloonPopping : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Bullet"))
+        if (collision.CompareTag("Balloon"))
         {
-            Destroy(gameObject);
+            Destroy(collision.gameObject);
         }
     }
 }
