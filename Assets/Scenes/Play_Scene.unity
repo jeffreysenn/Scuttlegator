@@ -1439,6 +1439,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 4afb19d2279b9544fb833eb8a616b655,
         type: 3}
+    - target: {fileID: 701437455, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 701437455, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 2.0766666
+      objectReference: {fileID: 0}
     - target: {fileID: 701437456, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
       propertyPath: m_Constraints
       value: 1
@@ -1934,7 +1942,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-  m_SpriteShape: {fileID: 11400000, guid: 77441271098d2bc4b813a6274c3707cd, type: 2}
+  m_SpriteShape: {fileID: 11400000, guid: 13cb809a5e5144e46adf764d2b6ede82, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
   m_UpdateCollider: 0
