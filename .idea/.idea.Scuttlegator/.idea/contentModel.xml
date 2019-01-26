@@ -7,6 +7,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="BalloonSpawn.cs" t="Include" />
           <e p="BoulderFall.cs" t="Include" />
           <e p="BoulderSpawn.cs" t="Include" />
           <e p="BulletController.cs" t="Include" />
@@ -16,6 +17,7 @@
           <e p="MovementComponent.cs" t="Include" />
           <e p="PhysicsObject.cs" t="Include" />
           <e p="RopeBehaviour.cs" t="Include" />
+          <e p="SetBallonLine.cs" t="Include" />
           <e p="TS_Rising.cs" t="Include" />
         </e>
       </e>
