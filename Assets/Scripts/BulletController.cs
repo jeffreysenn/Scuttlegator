@@ -6,7 +6,7 @@ public class BulletController : MonoBehaviour
 {
     [SerializeField] private float lifeTime = 1;
     private Vector2 launchVelocity = Vector2.zero;
-
+    
     // Update is called once per frame
     void Update()
     {
