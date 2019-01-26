@@ -26,6 +26,9 @@ public class NewMovementComponent : MonoBehaviour
     [SerializeField] int airJumpNum = 2;
     private int airJumpedNum = 0;
 
+    Vector2 targetDeltaVelocity = Vector2.zero;
+
+
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
@@ -48,15 +51,19 @@ public class NewMovementComponent : MonoBehaviour
         //animator.SetBool("grounded", grounded);
         //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
 
-        if(!hasHitWall && IsHittingWall()) { hasHitWall = true; }
+        if (!hasHitWall && IsHittingWall()) { hasHitWall = true; }
+
+        ComputeDeltaVelocity();
+
     }
 
-    void FixedUpdate()
+    private void ComputeDeltaVelocity()
     {
-        if(Mathf.Abs(rgBody.velocity.x) < maxWalkSpeed)
+        targetDeltaVelocity = Vector2.zero;
+        if (Mathf.Abs(rgBody.velocity.x) < maxWalkSpeed && !(!IsGrounded() && IsHittingWall()))
         {
-            Physics2DExtensions.AddForce(rgBody, transform.right * Input.GetAxis("Horizontal") * walkAccelaration, ForceMode.VelocityChange);
-        }   
+            targetDeltaVelocity += (Vector2)transform.right * Input.GetAxis("Horizontal") * walkAccelaration;
+        }
 
         if (Input.GetButtonDown("Jump"))
         {
@@ -64,31 +71,72 @@ public class NewMovementComponent : MonoBehaviour
             if (IsGrounded() || hasHitWall)
             {
                 airJumpedNum = 0;
-                Physics2DExtensions.AddForce(rgBody, transform.up * (groundJumpSpeed - rgBody.velocity.y), ForceMode.VelocityChange);
+                targetDeltaVelocity += (Vector2)transform.up * (groundJumpSpeed - rgBody.velocity.y);
             }
             else if (IsHittingWall())
             {
                 if (wallIsRight)
                 {
-                    Physics2DExtensions.AddForce(rgBody, (rightWallJumpDirection).normalized * (wallJumpSpeed), ForceMode.VelocityChange);
+                    targetDeltaVelocity += (rightWallJumpDirection).normalized * (wallJumpSpeed);
                 }
                 else
                 {
                     Vector2 leftWallJumpDirection = new Vector2(-rightWallJumpDirection.x, rightWallJumpDirection.y);
-                    Physics2DExtensions.AddForce(rgBody, (leftWallJumpDirection).normalized * (wallJumpSpeed), ForceMode.VelocityChange);
-
+                    targetDeltaVelocity += (leftWallJumpDirection).normalized * (wallJumpSpeed);
                 }
             }
             else
             {
-                if(airJumpedNum < airJumpNum)
+                if (airJumpedNum < airJumpNum)
                 {
-                    Physics2DExtensions.AddForce(rgBody, transform.up * (airJumpSpeed - rgBody.velocity.y), ForceMode.VelocityChange);
+                    targetDeltaVelocity += (Vector2)transform.up * (airJumpSpeed - rgBody.velocity.y);
                 }
                 airJumpedNum++;
             }
 
         }
+    }
+
+    void FixedUpdate()
+    {
+        Physics2DExtensions.AddForce(rgBody, targetDeltaVelocity, ForceMode.VelocityChange);
+
+        //if(Mathf.Abs(rgBody.velocity.x) < maxWalkSpeed)
+        //{
+        //    Physics2DExtensions.AddForce(rgBody, transform.right * Input.GetAxis("Horizontal") * walkAccelaration, ForceMode.VelocityChange);
+        //}   
+
+        //if (Input.GetButtonDown("Jump"))
+        //{
+        //    hasHitWall = false;
+        //    if (IsGrounded() || hasHitWall)
+        //    {
+        //        airJumpedNum = 0;
+        //        Physics2DExtensions.AddForce(rgBody, transform.up * (groundJumpSpeed - rgBody.velocity.y), ForceMode.VelocityChange);
+        //    }
+        //    else if (IsHittingWall())
+        //    {
+        //        if (wallIsRight)
+        //        {
+        //            Physics2DExtensions.AddForce(rgBody, (rightWallJumpDirection).normalized * (wallJumpSpeed), ForceMode.VelocityChange);
+        //        }
+        //        else
+        //        {
+        //            Vector2 leftWallJumpDirection = new Vector2(-rightWallJumpDirection.x, rightWallJumpDirection.y);
+        //            Physics2DExtensions.AddForce(rgBody, (leftWallJumpDirection).normalized * (wallJumpSpeed), ForceMode.VelocityChange);
+
+        //        }
+        //    }
+        //    else
+        //    {
+        //        if(airJumpedNum < airJumpNum)
+        //        {
+        //            Physics2DExtensions.AddForce(rgBody, transform.up * (airJumpSpeed - rgBody.velocity.y), ForceMode.VelocityChange);
+        //        }
+        //        airJumpedNum++;
+        //    }
+
+        //}
 
     }
 
@@ -111,7 +159,7 @@ public class NewMovementComponent : MonoBehaviour
     bool IsHittingWall()
     {
         BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
-        Collider2D hitCollider = Physics2D.OverlapBox(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x + wallCheckOvershoot * 2, boxCollider.bounds.size.y), 0, layerMask);
+        Collider2D hitCollider = Physics2D.OverlapBox(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x + wallCheckOvershoot * 2, boxCollider.bounds.size.y - wallCheckOvershoot*2), 0, layerMask);
         if(hitCollider != null)
         {
             RaycastHit2D hit = Physics2D.Raycast(boxCollider.bounds.center, Vector2.right, boxCollider.bounds.size.x/2 + wallCheckOvershoot, layerMask);

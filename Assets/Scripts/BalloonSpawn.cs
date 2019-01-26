@@ -7,7 +7,7 @@ public class BalloonSpawn : MonoBehaviour
 
     public GameObject balloonPrefab;
     public GunController gunController;
-    public float swayFactor;
+    public float swayFactor = 5f;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,7 @@ public class BalloonSpawn : MonoBehaviour
 
                 if(true)
                 {
-                    hit.rigidbody.AddForce(new Vector2( (hit.point.x - hit.transform.position.x) * swayFactor , 0.0f), ForceMode2D.Force);
+                    hit.rigidbody.AddForce(new Vector2( (hit.point.x - hit.transform.position.x) * swayFactor , 0.0f), ForceMode2D.Impulse);
                 }
 
             }
