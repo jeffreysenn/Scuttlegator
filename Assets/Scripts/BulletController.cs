@@ -24,5 +24,10 @@ public class BulletController : MonoBehaviour
         launchVelocity = absoluteVelocity;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Destroy(gameObject);
+    }
+
 
 }

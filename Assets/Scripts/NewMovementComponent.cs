@@ -17,6 +17,8 @@ public class NewMovementComponent : MonoBehaviour
     [SerializeField] float wallCheckOvershoot = .3f;
     public LayerMask layerMask;
 
+    public SpriteRenderer gunSprite;
+
     private bool hasHitWall = false;
     private bool wallIsRight = false;
 
@@ -31,7 +33,11 @@ public class NewMovementComponent : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private float preSpeedY;
 
+    private bool isGrounded = false;
+
+    private Vector3 oriScale;
 
     // Start is called before the first frame update
     void Start()
@@ -40,16 +46,29 @@ public class NewMovementComponent : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
 
+        preSpeedY = rgBody.velocity.y;
+
+        oriScale = transform.localScale;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (rgBody.velocity.x > 0) { spriteRenderer.flipX = false; }
-        else if (rgBody.velocity.x < 0) { spriteRenderer.flipX = true; }
+        //if (rgBody.velocity.x > 0.1f) { spriteRenderer.flipX = false; }
+        //else if (rgBody.velocity.x < -0.1f) { spriteRenderer.flipX = true; }
 
-        //animator.SetBool("grounded", grounded);
-        //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+        if (rgBody.velocity.x > 0.1f) { transform.localScale = oriScale; }
+        else if (rgBody.velocity.x < -0.1f) { transform.localScale = new Vector3(-oriScale.x, oriScale.y, oriScale.z); }
+
+        isGrounded = IsGrounded();
+
+        animator.SetBool("grounded", IsGrounded());
+
+        bool isFalling = (rgBody.velocity.y < preSpeedY);
+        preSpeedY = rgBody.velocity.y;
+        animator.SetBool("isFalling", isFalling);
+
+        animator.SetFloat("velocityX", Mathf.Abs(rgBody.velocity.x));
 
         if (!hasHitWall && IsHittingWall()) { hasHitWall = true; }
 
@@ -142,12 +161,12 @@ public class NewMovementComponent : MonoBehaviour
 
     bool IsGrounded()
     {
-        BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
-        RaycastHit2D hit = Physics2D.Raycast(boxCollider.bounds.center, -Vector2.up, 10, layerMask);
+        CapsuleCollider2D capsuleCollider = GetComponent<CapsuleCollider2D>();
+        RaycastHit2D hit = Physics2D.Raycast(capsuleCollider.bounds.center, -Vector2.up, 10, layerMask);
         if(hit.collider == null) { return false; }
         else
         {
-            float centreToButtom = boxCollider.bounds.size.y / 2;
+            float centreToButtom = capsuleCollider.bounds.size.y / 2;
             if (Vector3.Distance(hit.point, transform.position) < centreToButtom + groundCheckOvershoot)
             {
                 return true;
@@ -158,11 +177,11 @@ public class NewMovementComponent : MonoBehaviour
 
     bool IsHittingWall()
     {
-        BoxCollider2D boxCollider = GetComponent<BoxCollider2D>();
-        Collider2D hitCollider = Physics2D.OverlapBox(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x + wallCheckOvershoot * 2, boxCollider.bounds.size.y - wallCheckOvershoot*2), 0, layerMask);
+        CapsuleCollider2D capsuleCollider = GetComponent<CapsuleCollider2D>();
+        Collider2D hitCollider = Physics2D.OverlapBox(capsuleCollider.bounds.center, new Vector2(capsuleCollider.bounds.size.x + wallCheckOvershoot * 2, capsuleCollider.bounds.size.y/5), 0, layerMask);
         if(hitCollider != null)
         {
-            RaycastHit2D hit = Physics2D.Raycast(boxCollider.bounds.center, Vector2.right, boxCollider.bounds.size.x/2 + wallCheckOvershoot, layerMask);
+            RaycastHit2D hit = Physics2D.Raycast(capsuleCollider.bounds.center, Vector2.right, capsuleCollider.bounds.size.x/2 + wallCheckOvershoot, layerMask);
             if(hit.collider != null)
             {
                 wallIsRight = true;

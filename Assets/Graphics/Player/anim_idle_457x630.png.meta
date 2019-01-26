@@ -1,7 +1,11 @@
 fileFormatVersion: 2
-guid: 2f43ebb10851da64aa266891b0834c7a
+guid: e483e3c70e1179b48a9f686d21825578
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: anim_idle_457x630_0
+    21300002: anim_idle_457x630_1
+    21300004: anim_idle_457x630_2
+    21300006: anim_idle_457x630_3
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,12 +44,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 350
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -93,11 +97,91 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: anim_idle_457x630_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 630
+        width: 457
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e273d085827c1c4e829c973bbcb8fef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_idle_457x630_1
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 630
+        width: 457
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 111dc296c6b9736419231ab00ce50ffd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_idle_457x630_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 457
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2ef4f3e02d772478f8fcf5afb66d25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: anim_idle_457x630_3
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 0
+        width: 457
+        height: 630
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02082a1c5348d6941aeef1ab21437d1e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6d942215309013842ab706db938c9ff4
+    spriteID: 73422004be4303844b77c63cf989b61e
     vertices: []
     indices: 
     edges: []

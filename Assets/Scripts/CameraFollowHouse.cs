@@ -5,14 +5,16 @@ using UnityEngine;
 public class CameraFollowHouse : MonoBehaviour
 {
     public GameObject house;
+    private Vector3 offset;
     private void Start()
     {
         if (!house) Debug.LogError("house not set");
+        offset = -house.transform.position + transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Camera.main.transform.position = new Vector3(house.transform.position.x, house.transform.position.y + 4.0f, Camera.main.transform.position.z);
+        Camera.main.transform.position = house.transform.position + offset;
     }
 }
