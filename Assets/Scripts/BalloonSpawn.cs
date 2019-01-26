@@ -14,12 +14,15 @@ public class BalloonSpawn : MonoBehaviour
     {
         if (!gunController) Debug.LogError("gun controller not set");
         if (!balloonPrefab) Debug.LogError("balloon prefab not set");
+
+        BallonInfo.activeBalloonNum = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && BallonInfo.activeBalloonNum < gunController.maxBalloonNum)
         {
             RaycastHit2D hit;
             if(gunController.GetHitResult(out hit))
@@ -40,6 +43,8 @@ public class BalloonSpawn : MonoBehaviour
                 {
                     hit.rigidbody.AddForce(new Vector2( (hit.point.x - hit.transform.position.x) * swayFactor , 0.0f), ForceMode2D.Impulse);
                 }
+
+                BallonInfo.activeBalloonNum++; 
 
             }
             
