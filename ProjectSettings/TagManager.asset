@@ -6,6 +6,8 @@ TagManager:
   tags:
   - event
   - Bullet
+  - Hazard
+  - House
   layers:
   - Default
   - TransparentFX
