@@ -25,7 +25,12 @@ public class SetBallonLine : MonoBehaviour
     private void LineTest()
     {
         //line.SetPosition(0, transform.position);
-        line.SetPosition(0, transform.position);
-        line.SetPosition(1, joint.connectedBody.transform.position);
+        //line.SetPosition(0, transform.position);
+        //line.SetPosition(1, joint.connectedBody.transform.position);
+
+        line.SetPosition(0, new Vector3(transform.position.x, transform.position.y, 0));
+        Vector4 worldPos = joint.connectedBody.transform.localToWorldMatrix * new Vector4(joint.connectedAnchor.x, joint.connectedAnchor.y, 0, 1);
+        line.SetPosition(1, new Vector3(worldPos.x, worldPos.y, 0));
+
     }
 }

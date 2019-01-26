@@ -28,7 +28,8 @@ public class BalloonSpawn : MonoBehaviour
                 GameObject balloon = Instantiate(balloonPrefab, tetherPosition, Quaternion.identity);
                 SpringJoint2D joint = balloon.GetComponent<SpringJoint2D>();
                 joint.connectedAnchor = hit.point;
-                joint.distance = 2;
+                joint.connectedBody = hit.rigidbody;
+                joint.distance = 10.0f;
 
             }
             
