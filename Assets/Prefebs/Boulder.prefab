@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 571523945885220660}
   - component: {fileID: 1707368424545527461}
   - component: {fileID: 9038607265962696263}
-  m_Layer: 0
+  - component: {fileID: 5873455471092648285}
+  m_Layer: 31
   m_Name: Boulder
   m_TagString: Hazard
   m_Icon: {fileID: 0}
@@ -135,6 +136,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &5873455471092648285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2850231957560301753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d29d2c181156d43b3d29a15ec0b70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1561383412862229698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142,11 +155,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 982166853394602274}
     m_Modifications:
-    - target: {fileID: 1561383413678205070, guid: 6a1b9942091b7644a9a73f9ce17970f3,
-        type: 3}
-      propertyPath: m_Name
-      value: Mini_Boulder
-      objectReference: {fileID: 0}
     - target: {fileID: 1561383413678205069, guid: 6a1b9942091b7644a9a73f9ce17970f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -202,10 +210,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1561383413678205070, guid: 6a1b9942091b7644a9a73f9ce17970f3,
+        type: 3}
+      propertyPath: m_Name
+      value: Mini_Boulder
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561383413678205070, guid: 6a1b9942091b7644a9a73f9ce17970f3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
     - target: {fileID: 1561383413678205107, guid: 6a1b9942091b7644a9a73f9ce17970f3,
         type: 3}
       propertyPath: ShapeModule.type
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1561383413678205107, guid: 6a1b9942091b7644a9a73f9ce17970f3,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1b9942091b7644a9a73f9ce17970f3, type: 3}

@@ -80,7 +80,6 @@ public class NewMovementComponent : MonoBehaviour
 
     private void ComputeDeltaVelocity()
     {
-        targetDeltaVelocity = Vector2.zero;
         if (Mathf.Abs(rgBody.velocity.x) < maxWalkSpeed && !(!IsGrounded() && IsHittingWall()))
         {
             targetDeltaVelocity += (Vector2)transform.right * Input.GetAxis("Horizontal") * walkAccelaration;
@@ -88,11 +87,13 @@ public class NewMovementComponent : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
+            
             hasHitWall = false;
             if (IsGrounded() || hasHitWall)
             {
                 airJumpedNum = 0;
                 targetDeltaVelocity += (Vector2)transform.up * (groundJumpSpeed - rgBody.velocity.y);
+               
             }
             else if (IsHittingWall())
             {
@@ -121,6 +122,7 @@ public class NewMovementComponent : MonoBehaviour
     void FixedUpdate()
     {
         Physics2DExtensions.AddForce(rgBody, targetDeltaVelocity, ForceMode.VelocityChange);
+        targetDeltaVelocity = Vector2.zero;
 
         //if(Mathf.Abs(rgBody.velocity.x) < maxWalkSpeed)
         //{
