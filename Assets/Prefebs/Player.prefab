@@ -209,7 +209,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletSpeed: 10
-  bullet: {fileID: 2250706134892442672, guid: 2982020546f1be0419bc3c5ea2e45c42, type: 3}
+  bullets:
+  - {fileID: 2250706134892442672, guid: 2982020546f1be0419bc3c5ea2e45c42, type: 3}
+  - {fileID: 2250706134892442672, guid: 95f7a2295de60da43b01c524f3cc868b, type: 3}
+  rayCastDistance: 100
+  rayCastBuffer: 4
 --- !u!1001 &8412757360038801553
 PrefabInstance:
   m_ObjectHideFlags: 0
