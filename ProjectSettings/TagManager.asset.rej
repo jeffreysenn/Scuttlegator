@@ -1,0 +1,19 @@
+diff a/ProjectSettings/TagManager.asset b/ProjectSettings/TagManager.asset	(rejected hunks)
+@@ -11,15 +11,15 @@
+    - Ignore Raycast
+    - 
+    - Water
+    - UI
+    - 
+    - 
+--  - Bullet
+-   - Balloon
+ -  - Ground
+++  - 
+++  - 
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 

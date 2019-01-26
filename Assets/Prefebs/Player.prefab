@@ -42,8 +42,8 @@ GameObject:
   - component: {fileID: 5835871673247149178}
   - component: {fileID: 701437456}
   - component: {fileID: 701437455}
+  - component: {fileID: 1135641215473105717}
   - component: {fileID: 701437457}
-  - component: {fileID: 701437454}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -127,14 +127,14 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 3
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &701437455
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -161,6 +161,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1135641215473105717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835871673247149181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d5ebf7ab360b74cb29a3d246e48a16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkAccelaration: 4
+  maxWalkSpeed: 9
+  groundJumpSpeed: 20
+  airJumpSpeed: 15
+  wallJumpSpeed: 20
+  rightWallJumpDirection: {x: -1, y: 3}
+  groundCheckOvershoot: 0.1
+  wallCheckOvershoot: 0.1
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 2147483648
+  airJumpNum: 2
 --- !u!95 &701437457
 Animator:
   serializedVersion: 3
@@ -180,22 +204,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &701437454
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5835871673247149181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23177f39be2fb004caf293ed80d0ad4f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  minGroundNormalY: 0.65
-  gravityModifier: 1
-  maxSpeed: 7
-  jumpTakeOffSpeed: 7
 --- !u!114 &660668434
 MonoBehaviour:
   m_ObjectHideFlags: 0

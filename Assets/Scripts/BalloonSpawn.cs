@@ -7,6 +7,7 @@ public class BalloonSpawn : MonoBehaviour
 
     public GameObject balloonPrefab;
     public GunController gunController;
+    public float swayFactor;
 
     // Start is called before the first frame update
     void Start()
@@ -27,9 +28,18 @@ public class BalloonSpawn : MonoBehaviour
                 
                 GameObject balloon = Instantiate(balloonPrefab, tetherPosition, Quaternion.identity);
                 SpringJoint2D joint = balloon.GetComponent<SpringJoint2D>();
-                joint.connectedAnchor = hit.point;
+                
                 joint.connectedBody = hit.rigidbody;
-                joint.distance = 10.0f;
+
+                Vector4 worldPos = joint.connectedBody.transform.worldToLocalMatrix * new Vector4(hit.point.x, hit.point.y, 0, 1);
+                joint.connectedAnchor = new Vector2(worldPos.x, worldPos.y);
+
+                joint.distance = 5.0f;
+
+                if(true)
+                {
+                    hit.rigidbody.AddForce(new Vector2( (hit.point.x - hit.transform.position.x) * swayFactor , 0.0f), ForceMode2D.Force);
+                }
 
             }
             
