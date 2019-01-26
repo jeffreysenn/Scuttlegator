@@ -98,7 +98,6 @@ public class Parallax : MonoBehaviour
                     {
                         g.transform.position = new Vector3(g.transform.position.x, g.transform.position.y - AmountOfBackgrounds * SpriteWidth, g.transform.position.z);
                     }
-
                 }
             }
         }
