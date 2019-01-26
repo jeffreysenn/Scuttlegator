@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class NewMovementComponent : MonoBehaviour
 {
     [SerializeField] float walkAccelaration = 4;

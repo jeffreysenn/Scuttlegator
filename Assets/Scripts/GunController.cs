@@ -2,8 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public struct BallonInfo
+{
+    public static int activeBalloonNum = 0;
+}
+
 public class GunController : MonoBehaviour
 {
+    public int maxBalloonNum = 8;
     [SerializeField] private float bulletSpeed = 10;
     public GameObject[] bullets;
     [SerializeField] private float rayCastDistance = 100;
@@ -38,7 +45,10 @@ public class GunController : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-            InstantiateBullet(0);
+            if(BallonInfo.activeBalloonNum < maxBalloonNum)
+            {
+                // InstantiateBullet(0);
+            }
         }
         if (Input.GetButtonDown("Fire2"))
         {

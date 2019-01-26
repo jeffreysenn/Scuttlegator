@@ -8,6 +8,7 @@ public class BalloonPopping : MonoBehaviour
     {
         if (collision.CompareTag("Balloon"))
         {
+            BallonInfo.activeBalloonNum--;
             Destroy(collision.gameObject);
         }
     }
@@ -16,6 +17,7 @@ public class BalloonPopping : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Balloon"))
         {
+            BallonInfo.activeBalloonNum--;
             Destroy(collision.gameObject);
         }
     }
