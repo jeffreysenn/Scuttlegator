@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
-    [SerializeField] private float lifeTime = 1;
+    [SerializeField] private float lifeTime = 2;
     private Vector2 launchVelocity = Vector2.zero;
     
     // Update is called once per frame
