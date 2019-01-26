@@ -11,7 +11,7 @@ public class BoulderSpawn : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && _hasSpawned == false)
+        if ((other.CompareTag("Player") || other.CompareTag("Balloon") || other.CompareTag("House")) && _hasSpawned == false)
         {
             SpawnBoulder();
         }
