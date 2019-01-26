@@ -13,6 +13,6 @@ public class CameraFollowHouse : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Camera.main.transform.position = new Vector3(Camera.main.transform.position.x, house.transform.position.y + 4.0f, Camera.main.transform.position.z);
+        Camera.main.transform.position = new Vector3(house.transform.position.x, house.transform.position.y + 4.0f, Camera.main.transform.position.z);
     }
 }
