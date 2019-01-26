@@ -179,7 +179,7 @@ MonoBehaviour:
   airJumpSpeed: 15
   wallJumpSpeed: 20
   rightWallJumpDirection: {x: -1, y: 3}
-  groundCheckOvershoot: 0.1
+  groundCheckOvershoot: 0.5
   wallCheckOvershoot: 0.1
   layerMask:
     serializedVersion: 2
