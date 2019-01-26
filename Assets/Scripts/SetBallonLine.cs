@@ -13,17 +13,19 @@ public class SetBallonLine : MonoBehaviour
     {
         line = GetComponent<LineRenderer>();
         joint = GetComponent<SpringJoint2D>();
+          
     }
 
     // Update is called once per frame
     void Update()
     {
-        LineTest();   
+        LineTest();
     }
     
     private void LineTest()
     {
-        line.SetPosition(0, joint.anchor);
-        line.SetPosition(1, joint.connectedAnchor);
+        //line.SetPosition(0, transform.position);
+        line.SetPosition(0, transform.position);
+        line.SetPosition(1, joint.connectedBody.transform.position);
     }
 }
