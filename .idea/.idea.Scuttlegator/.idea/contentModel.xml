@@ -20,6 +20,7 @@
           <e p="PhysicsObject.cs" t="Include" />
           <e p="RopeBehaviour.cs" t="Include" />
           <e p="SetBallonLine.cs" t="Include" />
+<<<<<<< HEAD
           <e p="TS_Rising.cs" t="Include" />
         </e>
 =======
@@ -44,6 +45,8 @@
           <e p="PhysicsObject.cs" t="Include" />
           <e p="RopeBehaviour.cs" t="Include" />
           <e p="SetBallonLine.cs" t="Include" />
+=======
+>>>>>>> develop
           <e p="TS_Rising.cs" t="Include" />
         </e>
       </e>
