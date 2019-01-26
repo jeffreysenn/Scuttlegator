@@ -1429,6 +1429,7 @@ GameObject:
   - component: {fileID: 4174705500674128298}
   - component: {fileID: 4174705500674128297}
   - component: {fileID: 1389743120}
+  - component: {fileID: 1080183658}
   m_Layer: 31
   m_Name: House with new assets
   m_TagString: House
@@ -1445,7 +1446,7 @@ Transform:
   m_GameObject: {fileID: 4174705500674128308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.71000004, y: -7.2700005, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalScale: {x: 1, y: 1, z: 0.5}
   m_Children:
   - {fileID: 1436079553}
   - {fileID: 63398867}
@@ -1585,6 +1586,21 @@ CompositeCollider2D:
   m_CompositePaths:
     m_Paths: []
   m_VertexDistance: 0.0005
+--- !u!114 &1080183658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4174705500674128308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3576f194af2857a44afa9a2e301920cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseMaxSpeed: 10
+  balloonAddSpeedMod: 0.1
+  absoluteMaxSpeed: 15
 --- !u!1 &4529253512431778874
 GameObject:
   m_ObjectHideFlags: 0

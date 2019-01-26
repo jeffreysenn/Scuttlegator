@@ -37,7 +37,7 @@ public class NewMovementComponent : MonoBehaviour
     private Animator animator;
     private float preSpeedY;
 
-    private bool isGrounded = false;
+    public bool isGrounded = false;
 
     private Vector3 oriScale;
 
@@ -89,7 +89,7 @@ public class NewMovementComponent : MonoBehaviour
         {
             
             hasHitWall = false;
-            if (IsGrounded() || hasHitWall)
+            if (isGrounded || hasHitWall)
             {
                 airJumpedNum = 0;
                 targetDeltaVelocity += (Vector2)transform.up * (groundJumpSpeed - rgBody.velocity.y);
@@ -115,7 +115,6 @@ public class NewMovementComponent : MonoBehaviour
                 }
                 airJumpedNum++;
             }
-
         }
     }
 
