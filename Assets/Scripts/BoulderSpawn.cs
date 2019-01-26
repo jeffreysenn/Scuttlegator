@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BoulderSpawn : MonoBehaviour
 {
+    public bool left = false;
+    public bool right = false;
     public GameObject boulder;
     private bool _hasSpawned = false;
 
@@ -17,7 +19,16 @@ public class BoulderSpawn : MonoBehaviour
 
     private void SpawnBoulder()
     {
-        Instantiate(boulder, transform.position, Quaternion.identity);
+        if (left)
+        {
+            Instantiate(boulder, transform.position, Quaternion.identity).GetComponent<BoulderFall>().left = true;
+        }
+
+        if (right)
+        {
+            Instantiate(boulder, transform.position, Quaternion.identity).GetComponent<BoulderFall>().right = true;
+        }
+       
         _hasSpawned = true;
         Destroy(gameObject);
     }

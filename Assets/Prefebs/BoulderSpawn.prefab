@@ -109,4 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f4abc8944887b94b83d6807dd99ab85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  left: 0
+  right: 1
   boulder: {fileID: 2850231957560301753, guid: e42ba1b70c4faab449414c3e6e0659f2, type: 3}

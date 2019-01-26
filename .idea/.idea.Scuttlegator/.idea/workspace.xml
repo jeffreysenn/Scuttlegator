@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b06430c-5330-4882-b005-d66f8669ff13" name="Default" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scuttlegator/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scuttlegator/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scuttlegator/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scuttlegator/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Scuttlegator/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scuttlegator/.idea/workspace.xml" afterDir="false" />
@@ -12,6 +13,9 @@
       <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/Unity3DRider.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/RopeBehaviour.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/RopeBehaviour.cs.meta" beforeDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SetBallonLine.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/SetBallonLine.cs" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +23,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
   <component name="FileEditorManager">
@@ -51,10 +56,21 @@
                 <marker date="1548499997658" expanded="true" signature="360:405" ph="{...}" />
                 <marker date="1548499997658" expanded="true" signature="462:568" ph="{...}" />
               </folding>
+=======
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="LoadOnClick.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ToastyTitan/mastermind/Assets/Scripts/UI/LoadOnClick.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="45" />
+              <folding />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< Updated upstream
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/BoulderSpawn.cs">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,6 +81,19 @@
                 <marker date="1548502602082" expanded="true" signature="121:448" ph="{...}" />
                 <marker date="1548502602082" expanded="true" signature="245:309" ph="{...}" />
                 <marker date="1548502602082" expanded="true" signature="334:446" ph="{...}" />
+=======
+      <file leaf-file-name="SetBallonLine.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/SetBallonLine.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <marker date="1548500247821" expanded="false" signature="6:78" ph="..." />
+                <marker date="1548500247821" expanded="true" signature="122:685" ph="{...}" />
+                <marker date="1548500247821" expanded="true" signature="264:379" ph="{...}" />
+                <marker date="1548500247821" expanded="true" signature="437:469" ph="{...}" />
+                <marker date="1548500247821" expanded="true" signature="502:683" ph="{...}" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
@@ -72,24 +101,37 @@
       </file>
     </leaf>
   </component>
+<<<<<<< Updated upstream
 >>>>>>> BoulderFall
+=======
+>>>>>>> Stashed changes
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+<<<<<<< Updated upstream
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/EventDetection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoulderFall.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BoulderSpawn.cs" root0="FORCE_HIGHLIGHTING" />
+=======
+    <setting file="file://$PROJECT_DIR$/../../ToastyTitan/mastermind/Assets/Scripts/UI/LoadOnClick.cs" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SetBallonLine.cs" root0="FORCE_HIGHLIGHTING" />
+>>>>>>> Stashed changes
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/RopeBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Buttons.cs" />
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/Assets/Scripts/EventDetection.cs" />
         <option value="$PROJECT_DIR$/Assets/BoulderSpawn.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoulderFall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoulderSpawn.cs" />
+=======
+        <option value="$PROJECT_DIR$/Assets/SetBallonLine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SetBallonLine.cs" />
+>>>>>>> Stashed changes
       </list>
     </option>
   </component>
@@ -109,7 +151,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< Updated upstream
       <pane id="AssemblyExplorer" />
+=======
+>>>>>>> Stashed changes
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
@@ -117,6 +162,7 @@
       <pane id="UnityExplorer">
         <option name="show-hidden-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,12 +208,20 @@
       <updated>1548451691428</updated>
       <workItem from="1548451697714" duration="39000" />
       <workItem from="1548451754664" duration="1753000" />
+<<<<<<< Updated upstream
       <workItem from="1548497583966" duration="3284000" />
+=======
+      <workItem from="1548497110565" duration="3204000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="5076000" />
+=======
+    <option name="totallyTimeSpent" value="4996000" />
+>>>>>>> Stashed changes
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -301,5 +355,88 @@
       </provider>
     </entry>
   </component>
+<<<<<<< Updated upstream
 >>>>>>> BoulderFall
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/RopeBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ToastyTitan/mastermind/Assets/Scripts/UI/LoadOnClick.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Buttons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/RopeBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/RopeBehaviour.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Buttons.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/SetBallonLine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="22" column="3" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="22" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ToastyTitan/mastermind/Assets/Scripts/UI/LoadOnClick.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SetBallonLine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <marker date="1548500247821" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548500247821" expanded="true" signature="122:685" ph="{...}" />
+            <marker date="1548500247821" expanded="true" signature="264:379" ph="{...}" />
+            <marker date="1548500247821" expanded="true" signature="437:469" ph="{...}" />
+            <marker date="1548500247821" expanded="true" signature="502:683" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+>>>>>>> Stashed changes
 </project>
