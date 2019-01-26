@@ -114,7 +114,7 @@ public class NewMovementComponent : MonoBehaviour
         Collider2D hitCollider = Physics2D.OverlapBox(boxCollider.bounds.center, new Vector2(boxCollider.bounds.size.x + wallCheckOvershoot * 2, boxCollider.bounds.size.y), 0, layerMask);
         if(hitCollider != null)
         {
-            RaycastHit2D hit = Physics2D.Raycast(boxCollider.bounds.center, Vector2.right, 10, layerMask);
+            RaycastHit2D hit = Physics2D.Raycast(boxCollider.bounds.center, Vector2.right, boxCollider.bounds.size.x/2 + wallCheckOvershoot, layerMask);
             if(hit.collider != null)
             {
                 wallIsRight = true;
