@@ -97,8 +97,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.91360855, y: -2.5303116}
-  - {x: 2.0571146, y: -2.4208279}
+  - {x: -1.9208813, y: -16.776009}
+  - {x: 2.776597, y: -18.321325}
 --- !u!114 &627118812145642660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,4 +113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   left: 1
   right: 0
+  repeating: 1
+  repeatCooldownInSeconds: 4
   boulder: {fileID: 2850231957560301753, guid: e42ba1b70c4faab449414c3e6e0659f2, type: 3}
