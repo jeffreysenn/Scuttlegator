@@ -99,6 +99,7 @@ MonoBehaviour:
   left: 0
   right: 0
   initialForce: 200
+  maxLifeTime: 10
 --- !u!50 &1707368424545527461
 Rigidbody2D:
   serializedVersion: 4
@@ -157,6 +158,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 982166853394602274}
     m_Modifications:
+    - target: {fileID: 1561383413678205070, guid: 6a1b9942091b7644a9a73f9ce17970f3,
+        type: 3}
+      propertyPath: m_Name
+      value: Mini_Boulder
+      objectReference: {fileID: 0}
     - target: {fileID: 1561383413678205069, guid: 6a1b9942091b7644a9a73f9ce17970f3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -211,11 +217,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1561383413678205070, guid: 6a1b9942091b7644a9a73f9ce17970f3,
-        type: 3}
-      propertyPath: m_Name
-      value: Mini_Boulder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a1b9942091b7644a9a73f9ce17970f3, type: 3}
