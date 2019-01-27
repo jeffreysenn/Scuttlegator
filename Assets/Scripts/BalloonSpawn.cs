@@ -34,7 +34,7 @@ public class BalloonSpawn : MonoBehaviour
 
                     GameObject balloon = Instantiate(balloonPrefab, tetherPosition, Quaternion.identity);
                     SpringJoint2D joint = balloon.GetComponent<SpringJoint2D>();
-                    AudioManager.instance.PlaySound("BalloonSpawn", 1.0f, true, 0.1f);
+                    AudioManager.instance.PlaySound("BalloonSpawn", .1f, true, 0.2f);
 
                     joint.connectedBody = hit.rigidbody;
 
