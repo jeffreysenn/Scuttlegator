@@ -12,8 +12,6 @@ public class BalloonSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (!gunController) Debug.LogError("gun controller not set");
-        if (!balloonPrefab) Debug.LogError("balloon prefab not set");
 
         BallonInfo.activeBalloonNum = 0;
 
