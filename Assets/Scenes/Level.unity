@@ -367,6 +367,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6948915601594161467, guid: e36703f4c4c221c4ca804fe1c0576a9e,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: ccb8cf52edeb5e541b3444d90dccdd18, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e36703f4c4c221c4ca804fe1c0576a9e, type: 3}
 --- !u!1001 &182649683
@@ -522,6 +527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnOffset: 2
+  forcedRespawnDistance: 10
 --- !u!1 &254725584
 GameObject:
   m_ObjectHideFlags: 0
