@@ -438,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 5835871673247149179, guid: a55b01c4b956da44d8f17595d69aa123,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.31
+      value: -5.64
       objectReference: {fileID: 0}
     - target: {fileID: 5835871673247149179, guid: a55b01c4b956da44d8f17595d69aa123,
         type: 3}
@@ -1720,6 +1720,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   house: {fileID: 1389743118}
+  maxShakeMod: 1
+  noShakeSpeed: 8
 --- !u!1001 &1695511843
 PrefabInstance:
   m_ObjectHideFlags: 0

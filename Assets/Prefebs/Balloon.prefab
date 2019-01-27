@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5544280958385036960}
   - component: {fileID: 1639826644}
   - component: {fileID: 1639826643}
+  - component: {fileID: 4752564448932419615}
   m_Layer: 9
   m_Name: Balloon
   m_TagString: Balloon
@@ -248,3 +249,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76e5dea62aa89b4e9f3060e079fcc43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4752564448932419615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5544280958385036961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e491dd0d0cdab646ab8b8e7a72b2fc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PoppedBalloon: {fileID: 3069251172989125508, guid: 3349bcec865bc04459c27f2ef5c83596,
+    type: 3}
