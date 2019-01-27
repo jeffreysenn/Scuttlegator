@@ -19,8 +19,9 @@ public class AmmuUIController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        gunController.GetCurrentAmmu();
+        if(gunController.GetMaxAmmu() == gunController.GetCurrentAmmu()) { ammuNum.enabled = false; }
+        else{ ammuNum.enabled = true; }
         ammuNum.text = gunController.GetCurrentAmmu().ToString();
-        ammuNum.transform.position = Camera.main.WorldToScreenPoint(transform.position);
+        ammuNum.transform.position = Camera.main.WorldToScreenPoint(transform.position + offset);
     }
 }
