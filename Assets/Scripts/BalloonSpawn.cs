@@ -22,14 +22,16 @@ public class BalloonSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && BallonInfo.activeBalloonNum < gunController.maxBalloonNum)
+        if (gunController)
         {
-            RaycastHit2D hit;
-
-            if(gunController.CanShoot(out hit))
+            if (Input.GetMouseButtonDown(0) && BallonInfo.activeBalloonNum < gunController.maxBalloonNum)
             {
-                
-                    if(hit.rigidbody == null) { return; }
+                RaycastHit2D hit;
+
+                if (gunController.CanShoot(out hit))
+                {
+
+                    if (hit.rigidbody == null) { return; }
                     Vector3 tetherPosition = new Vector3(hit.point.x, hit.point.y, 0);
 
                     GameObject balloon = Instantiate(balloonPrefab, tetherPosition, Quaternion.identity);
@@ -49,10 +51,12 @@ public class BalloonSpawn : MonoBehaviour
                     }
 
                     BallonInfo.activeBalloonNum++;
-                
-                 
 
+
+
+                }
             }
+        
             
             
 
