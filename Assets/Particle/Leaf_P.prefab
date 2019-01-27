@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4051362764519626792}
   - component: {fileID: 2670448542883368688}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: Leaf_P
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7661645829550984721}
-  m_LocalRotation: {x: -0.6331964, y: -0.3147417, z: 0.3147417, w: 0.6331964}
+  m_LocalRotation: {x: -0.63319653, y: -0.31474176, z: 0.3147415, w: 0.63319635}
   m_LocalPosition: {x: 18.08, y: 39.38, z: 10.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1243,8 +1243,8 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 1.5707963
-      minScalar: -1.5707963
+      scalar: 0.7853981
+      minScalar: -0.7853981
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3381,7 +3381,7 @@ ParticleSystem:
     curve:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 6.283185
+      scalar: 3.1415925
       minScalar: 0.7853982
       maxCurve:
         serializedVersion: 2
