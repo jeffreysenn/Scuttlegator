@@ -2842,54 +2842,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: rayCastDistance
-      value: 200
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: maxBalloonNum
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: ammoRefillTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: coolDown
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: lineGradientAiming.key0.r
-      value: 0.5938057
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: lineGradientAiming.key0.g
-      value: 0.9056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: lineGradientAiming.key0.b
-      value: 0.6626867
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: lineGradientAiming.ctime0
-      value: 57825
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: lineGradientAiming.key1.r
-      value: 0.9103774
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: lineGradientAiming.key1.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: lineGradientAiming.key1.b
-      value: 0.93054247
-      objectReference: {fileID: 0}
-    - target: {fileID: 660668434, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: lineGradientAiming.ctime1
-      value: 65535
-      objectReference: {fileID: 0}
     - target: {fileID: 5835871673247149179, guid: a55b01c4b956da44d8f17595d69aa123,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2945,70 +2897,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5835871673247149179, guid: a55b01c4b956da44d8f17595d69aa123,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5835871673247149179, guid: a55b01c4b956da44d8f17595d69aa123,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5835871673247149179, guid: a55b01c4b956da44d8f17595d69aa123,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 701437456, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Mass
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1135641215473105717, guid: a55b01c4b956da44d8f17595d69aa123,
-        type: 3}
-      propertyPath: groundCheckOvershoot
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 1559928571, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
       propertyPath: ammuNum
       value: 
       objectReference: {fileID: 52505896}
-    - target: {fileID: 1559928571, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1559928571, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: offset.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624410950, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.r
-      value: 0.6273585
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624410950, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624410950, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0.71404976
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624410950, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Parameters.colorGradient.ctime0
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624410950, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.r
-      value: 0.6273585
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624410950, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1624410950, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.b
-      value: 0.71404976
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
 --- !u!4 &94373674 stripped
@@ -8581,28 +8473,28 @@ Transform:
   - {fileID: 1690134295}
   - {fileID: 244439765}
   - {fileID: 2119248517}
-  - {fileID: 662902562}
   - {fileID: 449935166}
-  - {fileID: 852968786}
+  - {fileID: 662902562}
   - {fileID: 1668701413}
-  - {fileID: 177931404}
+  - {fileID: 852968786}
   - {fileID: 1732273285}
   - {fileID: 541004408}
-  - {fileID: 808583096}
   - {fileID: 2082190997}
+  - {fileID: 808583096}
+  - {fileID: 177931404}
+  - {fileID: 243224939}
   - {fileID: 367425247}
   - {fileID: 842212208}
-  - {fileID: 582849035}
-  - {fileID: 243224939}
   - {fileID: 1838913447}
+  - {fileID: 582849035}
+  - {fileID: 646508456}
   - {fileID: 766753017}
   - {fileID: 250201747}
   - {fileID: 94373674}
-  - {fileID: 646508456}
+  - {fileID: 138344141}
+  - {fileID: 360299646}
   - {fileID: 136437834}
   - {fileID: 1674693883}
-  - {fileID: 360299646}
-  - {fileID: 138344141}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10334,26 +10226,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4551702998e0e5346b0bb5f163dcce55, type: 3}
---- !u!1 &204817151 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5835871673247149181, guid: a55b01c4b956da44d8f17595d69aa123,
-    type: 3}
-  m_PrefabInstance: {fileID: 80720485}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &204817158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 204817151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac75b7117a77229499342c153a48e6be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnOffset: 2
-  forcedRespawnDistance: 10
 --- !u!1001 &223589271
 PrefabInstance:
   m_ObjectHideFlags: 0
