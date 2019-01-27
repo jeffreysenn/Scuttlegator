@@ -79,7 +79,7 @@ MonoBehaviour:
   BackgroundSprite: {fileID: 21300000, guid: 60c1095d25f3b5948bfd451217cbcf83, type: 3}
   parallaxWeight: -0.15
   SpriteColor: {r: 0.41568628, g: 0.38356447, b: 0.36078432, a: 1}
-  OrderInLayer: 0
+  OrderInLayer: -3
 --- !u!1 &6427620217212944637
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,4 +127,4 @@ MonoBehaviour:
   BackgroundSprite: {fileID: 21300000, guid: f96e529ab084b1f4094b84a4018b8b93, type: 3}
   parallaxWeight: -0.3
   SpriteColor: {r: 0.6509804, g: 0.62067, b: 0.5921569, a: 1}
-  OrderInLayer: 0
+  OrderInLayer: -4

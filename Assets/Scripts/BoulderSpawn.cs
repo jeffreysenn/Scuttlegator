@@ -6,6 +6,8 @@ public class BoulderSpawn : MonoBehaviour
 {
     public bool left = false;
     public bool right = false;
+    public bool repeating = false;
+    public float repeatCooldownInSeconds = 4.0f;
     public GameObject boulder;
     private bool _hasSpawned = false;
 
@@ -14,6 +16,10 @@ public class BoulderSpawn : MonoBehaviour
         if ((other.CompareTag("Player") || other.CompareTag("Balloon") || other.CompareTag("House")) && _hasSpawned == false)
         {
             SpawnBoulder();
+            if (repeating)
+            {
+                InvokeRepeating("SpawnBoulder", repeatCooldownInSeconds, repeatCooldownInSeconds);
+            }
         }
     }
 
@@ -30,6 +36,6 @@ public class BoulderSpawn : MonoBehaviour
         }
        
         _hasSpawned = true;
-        Destroy(gameObject);
+        if(!repeating) Destroy(gameObject);
     }
 }
