@@ -19,14 +19,18 @@ public class CameraController : MonoBehaviour
 
     private void Start()
     {
-        if (!house) Debug.LogError("house not set");
+        if (house) {
+            houseRgbody = house.GetComponent<Rigidbody2D>();
+            houseSpeedCap = house.GetComponent<RigidbodySpeedCap>();
+            offset = -house.transform.position + transform.position;
+            preVel = houseRgbody.velocity;
+        }
 
-        houseRgbody = house.GetComponent<Rigidbody2D>();
-        houseSpeedCap = house.GetComponent<RigidbodySpeedCap>();
+        
 
-        offset = -house.transform.position + transform.position;
+        
 
-        preVel = houseRgbody.velocity;
+        
 
         originalPos = transform.position;
     }
@@ -34,19 +38,27 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float targetShakeMod;
-        if(preVel.magnitude < noShakeSpeed) { targetShakeMod = 0; }
-        else
+        if (house)
         {
-            targetShakeMod = maxShakeMod * (preVel.magnitude - noShakeSpeed) / (houseSpeedCap.absoluteMaxSpeed - noShakeSpeed);
+            float targetShakeMod;
+            if (preVel.magnitude < noShakeSpeed) { targetShakeMod = 0; }
+            else
+            {
+                targetShakeMod = maxShakeMod * (preVel.magnitude - noShakeSpeed) / (houseSpeedCap.absoluteMaxSpeed - noShakeSpeed);
+            }
+            transform.localPosition = house.transform.position + offset + Random.insideUnitSphere * targetShakeMod;
         }
-        transform.localPosition = house.transform.position + offset + Random.insideUnitSphere * targetShakeMod;
     }
 
     private void FixedUpdate()
     {
-        Vector3 currentVel = houseRgbody.velocity;
-        acc = (currentVel - preVel) / Time.fixedDeltaTime;
-        preVel = currentVel;
+
+        if (house)
+        {
+            Vector3 currentVel = houseRgbody.velocity;
+            acc = (currentVel - preVel) / Time.fixedDeltaTime;
+            preVel = currentVel;
+        }
+        
     }
 }
