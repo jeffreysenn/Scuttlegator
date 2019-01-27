@@ -9,9 +9,12 @@ public class BoulderFall : MonoBehaviour
     public bool left = false;
     public bool right = false;
     [SerializeField] private float initialForce;
+    [SerializeField] private float maxLifeTime = 20;
+    private float timer = 0;
     
     void Start()
     {
+        timer = 0;
         body = GetComponent<Rigidbody2D>();
 
 
@@ -36,6 +39,7 @@ public class BoulderFall : MonoBehaviour
 
     void Update()
     {
-        
+        timer += Time.deltaTime;
+        if(timer > maxLifeTime) { Destroy(gameObject); }
     }
 }
