@@ -28,13 +28,12 @@ public class BalloonSpawn : MonoBehaviour
 
             if(gunController.CanShoot(out hit))
             {
-                if (hit.collider.gameObject.CompareTag("House"))
-                {
+                
                     Vector3 tetherPosition = new Vector3(hit.point.x, hit.point.y, 0);
 
                     GameObject balloon = Instantiate(balloonPrefab, tetherPosition, Quaternion.identity);
                     SpringJoint2D joint = balloon.GetComponent<SpringJoint2D>();
-
+                    if(hit.rigidbody == null) { return; }
                     joint.connectedBody = hit.rigidbody;
 
                     Vector4 worldPos = joint.connectedBody.transform.worldToLocalMatrix * new Vector4(hit.point.x, hit.point.y, 0, 1);
@@ -48,7 +47,7 @@ public class BalloonSpawn : MonoBehaviour
                     }
 
                     BallonInfo.activeBalloonNum++;
-                }
+                
                  
 
             }

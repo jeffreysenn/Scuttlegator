@@ -89,11 +89,11 @@ public class GunController : MonoBehaviour
             //InstantiateBullet(1);
             if (GetHitResult(out RaycastHit2D hit))
             {
-                BallonInfo.activeBalloonNum--;
-                GameObject g = Instantiate(PoppedBalloon, hit.transform.position, hit.transform.rotation);
-                g.GetComponent<Rigidbody2D>().velocity = hit.rigidbody.velocity;
                 if (hit.collider.gameObject.CompareTag("Balloon"))
                 {
+                    BallonInfo.activeBalloonNum--;
+                    GameObject g = Instantiate(PoppedBalloon, hit.transform.position, hit.transform.rotation);
+                    g.GetComponent<Rigidbody2D>().velocity = hit.rigidbody.velocity;
                     Destroy(hit.transform.gameObject);
                 }
 
