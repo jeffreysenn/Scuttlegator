@@ -97,4 +97,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   house: {fileID: 0}
   maxShakeMod: 0.5
-  noShakeSpeed: 8
+  noShakeSpeed: 100

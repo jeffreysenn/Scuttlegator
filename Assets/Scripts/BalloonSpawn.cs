@@ -25,7 +25,8 @@ public class BalloonSpawn : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && BallonInfo.activeBalloonNum < gunController.maxBalloonNum)
         {
             RaycastHit2D hit;
-            if(gunController.GetHitResults(out hit, "House"))
+
+            if(gunController.CanShoot(out hit))
             {
                 Vector3 tetherPosition = new Vector3(hit.point.x, hit.point.y, 0);
                 
