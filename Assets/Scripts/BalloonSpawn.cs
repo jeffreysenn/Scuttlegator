@@ -28,24 +28,28 @@ public class BalloonSpawn : MonoBehaviour
 
             if(gunController.CanShoot(out hit))
             {
-                Vector3 tetherPosition = new Vector3(hit.point.x, hit.point.y, 0);
-                
-                GameObject balloon = Instantiate(balloonPrefab, tetherPosition, Quaternion.identity);
-                SpringJoint2D joint = balloon.GetComponent<SpringJoint2D>();
-                
-                joint.connectedBody = hit.rigidbody;
-
-                Vector4 worldPos = joint.connectedBody.transform.worldToLocalMatrix * new Vector4(hit.point.x, hit.point.y, 0, 1);
-                joint.connectedAnchor = new Vector2(worldPos.x, worldPos.y);
-
-                joint.distance = 5.0f;
-
-                if(true)
+                if (hit.collider.gameObject.CompareTag("House"))
                 {
-                    hit.rigidbody.AddForce(new Vector2( (hit.point.x - hit.transform.position.x) * swayFactor , 0.0f), ForceMode2D.Impulse);
-                }
+                    Vector3 tetherPosition = new Vector3(hit.point.x, hit.point.y, 0);
 
-                BallonInfo.activeBalloonNum++; 
+                    GameObject balloon = Instantiate(balloonPrefab, tetherPosition, Quaternion.identity);
+                    SpringJoint2D joint = balloon.GetComponent<SpringJoint2D>();
+
+                    joint.connectedBody = hit.rigidbody;
+
+                    Vector4 worldPos = joint.connectedBody.transform.worldToLocalMatrix * new Vector4(hit.point.x, hit.point.y, 0, 1);
+                    joint.connectedAnchor = new Vector2(worldPos.x, worldPos.y);
+
+                    joint.distance = 5.0f;
+
+                    if (true)
+                    {
+                        hit.rigidbody.AddForce(new Vector2((hit.point.x - hit.transform.position.x) * swayFactor, 0.0f), ForceMode2D.Impulse);
+                    }
+
+                    BallonInfo.activeBalloonNum++;
+                }
+                 
 
             }
             
