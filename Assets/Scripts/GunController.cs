@@ -19,6 +19,8 @@ public class GunController : MonoBehaviour
     private GameObject player;
     private ContactFilter2D contactFilter;
 
+    public GameObject PoppedBalloon;
+
     //void FindAssets()
     //{
     //    bullets = new GameObject[2];
@@ -52,7 +54,14 @@ public class GunController : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire2"))
         {
-            InstantiateBullet(1);
+            //InstantiateBullet(1);
+            if (GetHitResults(out RaycastHit2D hit, "Balloon"))
+            {
+                GameObject g = Instantiate(PoppedBalloon, hit.transform.position, hit.transform.rotation);
+                g.GetComponent<Rigidbody2D>().velocity = hit.rigidbody.velocity;
+
+                Destroy(hit.transform.gameObject);
+            }
         }
 
     }
@@ -73,7 +82,7 @@ public class GunController : MonoBehaviour
         newbullet.GetComponent<BulletController>().SetLaunchVelocity(parentVelocity + relativeVelocity);
     }
 
-    public bool GetHitResult(out RaycastHit2D outHit)
+    public bool GetHitResults(out RaycastHit2D outHit, string tag)
     {
         RaycastHit2D[] hits = new RaycastHit2D[rayCastBuffer];
         int hitNumbers = Physics2D.Raycast(muzzle.transform.position, muzzle.transform.up, contactFilter, hits, rayCastDistance);
@@ -83,7 +92,7 @@ public class GunController : MonoBehaviour
             {
                 if (hit.transform)
                 {
-                    if (hit.transform.gameObject.CompareTag("House"))
+                    if (hit.transform.gameObject.CompareTag(tag))
                     {
                         outHit = hit;
                         return true;

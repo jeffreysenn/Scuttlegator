@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 1135641215473105717}
   - component: {fileID: 701437457}
   - component: {fileID: 1280845116}
+  - component: {fileID: 2062297720}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -345,6 +346,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.81, y: 1.8}
   m_Direction: 0
+--- !u!114 &2062297720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5835871673247149181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac75b7117a77229499342c153a48e6be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnOffset: 2
 --- !u!114 &660668434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -364,6 +378,8 @@ MonoBehaviour:
   - {fileID: 2250706134892442672, guid: 95f7a2295de60da43b01c524f3cc868b, type: 3}
   rayCastDistance: 100
   rayCastBuffer: 4
+  PoppedBalloon: {fileID: 3069251172989125508, guid: 3349bcec865bc04459c27f2ef5c83596,
+    type: 3}
 --- !u!1001 &8412757360038801553
 PrefabInstance:
   m_ObjectHideFlags: 0

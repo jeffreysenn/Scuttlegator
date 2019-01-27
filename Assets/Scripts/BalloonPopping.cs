@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BalloonPopping : MonoBehaviour
 {
+    public GameObject PoppedBalloon;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Balloon"))
@@ -18,6 +20,10 @@ public class BalloonPopping : MonoBehaviour
         if(collision.gameObject.CompareTag("Balloon"))
         {
             BallonInfo.activeBalloonNum--;
+
+            GameObject g = Instantiate(PoppedBalloon, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
+            g.GetComponent<Rigidbody2D>().velocity = collision.gameObject.GetComponent<Rigidbody2D>().velocity;
+
             Destroy(collision.gameObject);
         }
     }
