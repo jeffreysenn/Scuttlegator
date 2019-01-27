@@ -485,6 +485,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2062297720, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
+      propertyPath: forcedRespawnDistance
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1559928571, guid: a55b01c4b956da44d8f17595d69aa123, type: 3}
       propertyPath: ammuNum
       value: 
