@@ -35,10 +35,9 @@ public class NewMovementComponent : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Animator animator;
-    private float preSpeedY;
 
     public bool isGrounded = false;
-
+    private Vector3 velBeforeJumping;
     private Vector3 oriScale;
 
     // Start is called before the first frame update
@@ -48,9 +47,9 @@ public class NewMovementComponent : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
 
-        preSpeedY = rgBody.velocity.y;
 
         oriScale = transform.localScale;
+        velBeforeJumping = Vector3.zero;
     }
 
     // Update is called once per frame
@@ -66,11 +65,12 @@ public class NewMovementComponent : MonoBehaviour
 
         animator.SetBool("grounded", IsGrounded());
 
-        bool isFalling = (rgBody.velocity.y < preSpeedY);
-        preSpeedY = rgBody.velocity.y;
+        bool isFalling = (rgBody.velocity.y < velBeforeJumping.y);
         animator.SetBool("isFalling", isFalling);
 
         animator.SetFloat("velocityX", Mathf.Abs(rgBody.velocity.x));
+        animator.SetBool("isWalling", IsHittingWall());
+
 
         if (!hasHitWall && IsHittingWall()) { hasHitWall = true; }
 
@@ -87,7 +87,7 @@ public class NewMovementComponent : MonoBehaviour
 
         if (Input.GetButtonDown("Jump"))
         {
-            
+            velBeforeJumping = rgBody.velocity;
             hasHitWall = false;
             if (isGrounded || hasHitWall)
             {
