@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1215071714}
   - component: {fileID: 1215071719}
   - component: {fileID: 1215071718}
+  - component: {fileID: 2819349869268296971}
   m_Layer: 9
   m_Name: BalloonPop
   m_TagString: Untagged
@@ -152,3 +153,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LifeTimeInSeconds: 0.4
+--- !u!114 &2819349869268296971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3069251172989125508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb2508f41ee0ee14ea14aa22fbc692a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

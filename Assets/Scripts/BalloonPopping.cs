@@ -20,7 +20,7 @@ public class BalloonPopping : MonoBehaviour
         if(collision.gameObject.CompareTag("Balloon"))
         {
             BallonInfo.activeBalloonNum--;
-            AudioManager.instance.PlaySound("BalloonPop", 1.0f, true, 0.1f);
+            
 
             GameObject g = Instantiate(PoppedBalloon, collision.gameObject.transform.position, collision.gameObject.transform.rotation);
             g.GetComponent<Rigidbody2D>().velocity = collision.gameObject.GetComponent<Rigidbody2D>().velocity;
