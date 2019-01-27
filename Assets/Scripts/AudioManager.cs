@@ -7,6 +7,8 @@ public class AudioManager : MonoBehaviour
 
     public AudioSource[] channels;
     public AudioSource musicChannel;
+    public AudioSource ambienceChannel;
+
     public float volumeIncrement = 0.1f;
 
     public AudioClip[] m_SoundEffects;
@@ -17,7 +19,7 @@ public class AudioManager : MonoBehaviour
     {
         InitAudioSources();
         instance = this;
-        musicChannel.Play();
+        if(musicChannel) musicChannel.Play();
     }
 
     public void PlaySound(string p_name, float volume = 1.0f, bool isPitchShifted = false, float pitchShift = 0.0f)
