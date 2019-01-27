@@ -3060,7 +3060,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-  m_SpriteShape: {fileID: 0}
+  m_SpriteShape: {fileID: 11400000, guid: 131177ec641ac3443ad3a69a7f76ccbf, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
   m_UpdateCollider: 1
@@ -3107,10 +3107,19 @@ SpriteShapeRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 0}
-  m_Sprites: []
+  m_Sprites:
+  - {fileID: 21300000, guid: 9b6c0407745bb0947952a92d89880d5d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: -27.022373, y: 324.90128, z: 0}
-    m_Extent: {x: 65.32988, y: 274.99606, z: 0}
+    m_Center: {x: -27.255466, y: 321.59314, z: -0.0195}
+    m_Extent: {x: 69.753876, y: 278.40576, z: 0.0195}
 --- !u!4 &705464825
 Transform:
   m_ObjectHideFlags: 0
@@ -4185,7 +4194,7 @@ GameObject:
   - component: {fileID: 1152971111}
   - component: {fileID: 1152971110}
   - component: {fileID: 1152971113}
-  m_Layer: 0
+  m_Layer: 31
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4261,7 +4270,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-  m_SpriteShape: {fileID: 11400000, guid: f9a66e3bdab88c24c941138f4ce8b133, type: 2}
+  m_SpriteShape: {fileID: 11400000, guid: 131177ec641ac3443ad3a69a7f76ccbf, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 0
   m_UpdateCollider: 0
@@ -4538,7 +4547,7 @@ MonoBehaviour:
       bevelSize: 0
       spriteIndex: 0
       corner: 0
-  m_SpriteShape: {fileID: 11400000, guid: 131177ec641ac3443ad3a69a7f76ccbf, type: 2}
+  m_SpriteShape: {fileID: 11400000, guid: f9a66e3bdab88c24c941138f4ce8b133, type: 2}
   m_SplineDetail: 16
   m_AdaptiveUV: 1
   m_UpdateCollider: 0
@@ -4586,7 +4595,7 @@ SpriteShapeRenderer:
   m_MaskInteraction: 0
   m_ShapeTexture: {fileID: 2800000, guid: 5a2ea6aff78c6cc4bbd671a9fdd80b5c, type: 3}
   m_Sprites:
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 5a2ea6aff78c6cc4bbd671a9fdd80b5c, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
@@ -4596,8 +4605,8 @@ SpriteShapeRenderer:
   - {fileID: 0}
   - {fileID: 0}
   m_LocalAABB:
-    m_Center: {x: 8.866364, y: 61.44851, z: 0}
-    m_Extent: {x: 73.533325, y: 72.204094, z: 0}
+    m_Center: {x: 8.896347, y: 61.45031, z: -0.007}
+    m_Extent: {x: 74.82311, y: 73.48608, z: 0.007}
 --- !u!4 &1156348319
 Transform:
   m_ObjectHideFlags: 0
@@ -5324,7 +5333,7 @@ PrefabInstance:
     - target: {fileID: 8548356293454539543, guid: 6278206a6152e774db0376680f42dd90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -76.551544
+      value: -74.912
       objectReference: {fileID: 0}
     - target: {fileID: 8548356293454539543, guid: 6278206a6152e774db0376680f42dd90,
         type: 3}
