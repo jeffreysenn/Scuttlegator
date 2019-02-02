@@ -78,7 +78,6 @@ public class GunController : MonoBehaviour
             {
                 // InstantiateBullet(0);
                 DrawLine(lineGradientFiring[0]);
-                coolDownTimer = coolDown;
                 startCoolDown = true;
                 currentAmmo--;
                 refillTimer = ammoRefillTime;
@@ -146,6 +145,7 @@ public class GunController : MonoBehaviour
         }
         if(GetHitResult(out outHit))
         {
+            coolDownTimer = coolDown;
             return true;
         }
         return false;

@@ -76,6 +76,11 @@ public class NewMovementComponent : MonoBehaviour
 
         ComputeDeltaVelocity();
 
+        if (Input.GetButtonDown("Cancel"))
+        {
+            Application.Quit();
+        }
+
     }
 
     private void ComputeDeltaVelocity()

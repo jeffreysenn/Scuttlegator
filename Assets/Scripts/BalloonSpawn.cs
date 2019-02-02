@@ -24,7 +24,7 @@ public class BalloonSpawn : MonoBehaviour
     {
         if (gunController)
         {
-            if (Input.GetMouseButtonDown(0) && BallonInfo.activeBalloonNum < gunController.maxBalloonNum)
+            if (Input.GetButtonDown("Fire1") && BallonInfo.activeBalloonNum < gunController.maxBalloonNum)
             {
                 RaycastHit2D hit;
 
